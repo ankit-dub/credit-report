@@ -1,0 +1,58 @@
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Home</title>
+    <style>
+#table {
+  -fs-table-paginate: paginate;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: grey;
+  color: white;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align: center; color: orange">
+    <span th:text="'Welcome to ' + ${to} + '!'"></span>
+</h1>
+
+
+<table id="table">
+    <thead>
+    <tr>
+        <th>Emi</th>
+        <th>Principal</th>
+        <th>interest</th>
+        <th>date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="loanList : ${loanList}">
+        <td th:text="${loanList.emi}"></td>
+        <td th:text="${loanList.principal}"></td>
+        <td th:text="${loanList.interest}"></td>
+        <td th:text="${loanList.date}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

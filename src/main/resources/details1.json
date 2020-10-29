@@ -1,0 +1,347 @@
+{
+  "Account": [
+    {
+      "Account Number": "0004639170000914079",
+      "Ownership Indicator": "Individual",
+      "Current Balance": 87891.0,
+      "Payment History End Date": "01092018",
+      "Date Reported and Certified": "29022020",
+      "Amount Overdue": 0.0,
+      "High Credit/Sanctioned Amount": 218235.0,
+      "Date Opened/Disbursed": "17092018",
+      "Payment History 1": "000000000000000000000000000000000000000000000000000000",
+      "Payment History Start Date": "01022020",
+      "Date of Last Payment": "22022020",
+      "Reporting Member Short Name": "HDFC BANK LTD",
+      "Account Type": "Credit Card",
+      "Rate Of Interest": 0.0,
+      "Cash Limit": 0.0,
+      "Repayment Tenure": 0.0,
+      "EMI Amount": 0.0,
+      "Written-off Amount (Principal)": 0.0,
+      "Written-off Amount (Total)": 0.0,
+      "Settlement Amount": 0.0
+    },
+    {
+      "Account Number": "0107350700020823",
+      "Ownership Indicator": "Individual",
+      "Current Balance": 0.0,
+      "Payment History End Date": "01022020",
+      "Date Reported and Certified": "30062017",
+      "Amount Overdue": 0.0,
+      "High Credit/Sanctioned Amount": 22032.0,
+      "Date Opened/Disbursed": "23052017",
+      "Payment History 1": "123345000123123",
+      "Payment History Start Date": "01062020",
+      "Date of Last Payment": "09062017",
+      "Reporting Member Short Name": "MANAPPURAM FINANCE LIMITED",
+      "Account Type": "Gold Loan",
+      "Rate Of Interest": 0.0,
+      "Cash Limit": 0.0,
+      "Repayment Tenure": 0.0,
+      "EMI Amount": 0.0,
+      "Written-off Amount (Principal)": 0.0,
+      "Written-off Amount (Total)": 0.0,
+      "Settlement Amount": 0.0
+    },
+    {
+      "Account Number": "403SPF95014149",
+      "Ownership Indicator": "Individual",
+      "Current Balance": 284273.0,
+      "Payment History End Date": "01112018",
+      "Date Reported and Certified": "29022020",
+      "Amount Overdue": 0.0,
+      "High Credit/Sanctioned Amount": 704999.0,
+      "Date Opened/Disbursed": "20112018",
+      "Payment History 1": "1234000000000000000000000000000000000000000000000000",
+      "Payment History Start Date": "01032020",
+      "Date of Last Payment": "02022020",
+      "Reporting Member Short Name": "Hero FINANCE LIMITED",
+      "Account Type": "Personal Loan",
+      "Rate Of Interest": 0.0,
+      "Cash Limit": 0.0,
+      "Repayment Tenure": 0.0,
+      "EMI Amount": 0.0,
+      "Written-off Amount (Principal)": 0.0,
+      "Written-off Amount (Total)": 0.0,
+      "Settlement Amount": 0.0
+    },
+    {
+      "Account Number": "LPCHE00038270420",
+      "Ownership Indicator": "Individual",
+      "Current Balance": 244809.0,
+      "Payment History End Date": "01112018",
+      "Date Reported and Certified": "29022020",
+      "Amount Overdue": 0.0,
+      "High Credit/Sanctioned Amount": 300000.0,
+      "Date Opened/Disbursed": "27112018",
+      "Payment History 1": "000000000000000000000000000000000000000000000000",
+      "Payment History Start Date": "01022020",
+      "Date of Last Payment": "05022020",
+      "Reporting Member Short Name": "ICICI BANK LTD",
+      "Account Type": "Personal Loan",
+      "Rate Of Interest": 0.0,
+      "Cash Limit": 0.0,
+      "Repayment Tenure": 0.0,
+      "EMI Amount": 0.0,
+      "Written-off Amount (Principal)": 0.0,
+      "Written-off Amount (Total)": 0.0,
+      "Settlement Amount": 0.0
+    }
+  ],
+  "Address": [
+    {
+      "Address Line1": "#26 and 27 RAJESHWARI NILAYA 1ST B MN RD NEAR VIGAN NAGAR BUS STOP 560075 KA",
+      "PIN Code": "560075",
+      "Date Reported": "31052017"
+    },
+    {
+      "Address Line1": "CAPGEMINI TECHNOLOGY SERVICES INDIA LTD 2BT TOWERS KARAPAKAM KARAPAKKAM BRAHMA-REDY.SURAM@CAPGEMINICOM.COM CHENNAI 600091 TN",
+      "PIN Code": "600091",
+      "Date Reported": "29022020"
+    },
+    {
+      "Address Line1": "CAPGEMINI NO 73/1 SUMMIT TWR A BRIGADE METROPOLIS WHITEFIELD RD BANGALORE 560048 AP",
+      "PIN Code": "560048",
+      "Date Reported": "29022020"
+    },
+    {
+      "Address Line1": "LOTUS PG ACCOMODATION 102 5TH CROSS ST IASIRIVER VIEW COLONY OMR KARAPAKKAM CHENNAI 600097 TN",
+      "PIN Code": "600097",
+      "Date Reported": "29022020"
+    },
+    {
+      "Address Line1": "NO 395 OPP BRAHMAN GARI TEMPLE ACHIREDDYPETA NARASARAOPET 522426 AP",
+      "PIN Code": "522426",
+      "Date Reported": "29022020"
+    },
+    {
+      "Address Line1": "H NO 305/A MADINA GUDA SAI KRUPA APARTMENTS MADINA GUDA 500050 TS",
+      "PIN Code": "500050",
+      "Date Reported": "15062017"
+    },
+    {
+      "Address Line1": "PRESTIGE CYBERR TOWERS 117 RAJIV GANDHI SALAI OMR KARAPAKKAM CHENNAI 600097 TN",
+      "PIN Code": "600097",
+      "Date Reported": "29022020"
+    },
+    {
+      "Address Line1": "NO 102 5TH CROSS STREET IAS / RIVER VIEW COLONY OMR KARAPAKKAM CHENNAI 600097 TN",
+      "PIN Code": "600097",
+      "Date Reported": "29022020"
+    }
+  ],
+  "Inquiry": [
+    {
+      "Enquiring Member Short Name": "CLIX CAPITAL SERVICES PVT LTD",
+      "Enquiry Amount": "70000",
+      "Enquiry Purpose": "Business Loan - General",
+      "Date of Enquiry": "24052020"
+    },
+    {
+      "Enquiring Member Short Name": "CLIX CAPITAL SERVICES PVT LTD",
+      "Enquiry Amount": "70000",
+      "Enquiry Purpose": "Two-wheeler Loan",
+      "Date of Enquiry": "21012020"
+    },
+    {
+      "Enquiring Member Short Name": "ORIGO FINANCE PRIVATE LIMITED",
+      "Enquiry Amount": "200000",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "20012020"
+    },
+    {
+      "Enquiring Member Short Name": "TECHFINO CAPITAL PRIVATE LIMITED",
+      "Enquiry Amount": "11000",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "26122019"
+    },
+    {
+      "Enquiring Member Short Name": "TECHFINO CAPITAL PRIVATE LIMITED",
+      "Enquiry Amount": "10000",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "23122019"
+    },
+    {
+      "Enquiring Member Short Name": "WESTERN INDIA TRANSPORT FINANCE",
+      "Enquiry Amount": "10000",
+      "Enquiry Purpose": "Business Loan-General",
+      "Date of Enquiry": "01112019"
+    },
+    {
+      "Enquiring Member Short Name": "SATYA MICRO CAPITAL LIMITED",
+      "Enquiry Amount": "10000",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "01112019"
+    },
+    {
+      "Enquiring Member Short Name": "SATYA MICRO CAPITAL LIMITED",
+      "Enquiry Amount": "10000",
+      "Enquiry Purpose": "Business Loan-General",
+      "Date of Enquiry": "01112019"
+    },
+    {
+      "Enquiring Member Short Name": "TECHFINO CAPITAL PRIVATE LIMITED",
+      "Enquiry Amount": "12000",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "04102019"
+    },
+    {
+      "Enquiring Member Short Name": "ARTHAN FINANCE PRIVATE LIMITED",
+      "Enquiry Amount": "500000",
+      "Enquiry Purpose": "Business Loan-General",
+      "Date of Enquiry": "11092019"
+    },
+    {
+      "Enquiring Member Short Name": "TECHFINO CAPITAL PRIVATE LIMITED",
+      "Enquiry Amount": "12000",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "27082019"
+    },
+    {
+      "Enquiring Member Short Name": "TECHFINO CAPITAL PRIVATE LIMITED",
+      "Enquiry Amount": "12000",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "17082019"
+    },
+    {
+      "Enquiring Member Short Name": "MONEXO FINTECH PRIVATE LIMITED",
+      "Enquiry Amount": "200000",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "18072019"
+    },
+    {
+      "Enquiring Member Short Name": "GROMOR FINANCE LIMITED",
+      "Enquiry Amount": "500000",
+      "Enquiry Purpose": "Other",
+      "Date of Enquiry": "12072019"
+    },
+    {
+      "Enquiring Member Short Name": "MONEXO FINTECH PRIVATE LIMITED",
+      "Enquiry Amount": "0",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "11072019"
+    },
+    {
+      "Enquiring Member Short Name": "FORTUNE INTEGRATED ASSETS FINANCE LIMITED",
+      "Enquiry Amount": "0",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "11072019"
+    },
+    {
+      "Enquiring Member Short Name": "SAMASTA",
+      "Enquiry Amount": "0",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "11072019"
+    },
+    {
+      "Enquiring Member Short Name": "DAVINTA FINANCIAL SERVICES PRIVATE LIMITED",
+      "Enquiry Amount": "0",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "11072019"
+    },
+    {
+      "Enquiring Member Short Name": "ORIGO FINANCE PRIVATE LIMITED",
+      "Enquiry Amount": "0",
+      "Enquiry Purpose": "OTHER",
+      "Date of Enquiry": "01072019"
+    }
+  ],
+  "TUEF Header": [
+    {
+      "Date Processed": "30042020",
+      "Enquiry Control Number": "CCR200430CR835365389",
+      "Subject Return Code": "1",
+      "Version": "12",
+      "Batch Id": "655531640200430"
+    }
+  ],
+  "Identification": [
+    {
+      "ID Type": "Income Tax ID Number (PAN)",
+      "ID Number": "DDOPS3608N",
+      "Date Reported": "31052017"
+    },
+    {
+      "ID Type": "Income Tax ID Number (PAN)",
+      "ID Number": "0",
+      "Date Reported": "15062017"
+    }
+  ],
+  "Telephone": [
+    {
+      "Telephone Number": "8428552399",
+      "Date Reported": "29022020"
+    },
+    {
+      "Telephone Number": "21212121",
+      "Date Reported": "29022020"
+    },
+    {
+      "Telephone Number": "8142466922",
+      "Date Reported": "15062017"
+    },
+    {
+      "Telephone Number": "8074497651",
+      "Date Reported": "15062017"
+    },
+    {
+      "Telephone Number": "25623878",
+      "Date Reported": "29022020"
+    },
+    {
+      "Telephone Number": "7996406754",
+      "Date Reported": "31052017"
+    },
+    {
+      "Telephone Number": "09666427306",
+      "Date Reported": "31052017"
+    },
+    {
+      "Telephone Number": "9182827532",
+      "Date Reported": "29022020"
+    }
+  ],
+  "Consumer Information": [
+    {
+      "Consumer Name Field1": "BRAHMA REDDY",
+      "Date of birth": "12061989",
+      "Date Reported": "29022020"
+    }
+  ],
+  "Score": [
+    {
+      "Reason Code 1": "F-Low Risk",
+      "Score": "679",
+      "Score Name": "PERFORM CONSUMER 2.0",
+      "Score Card Name": "CRIF",
+      "Score Date": "30042020"
+    }
+  ],
+  "Employment details": [
+    {
+      "Date Reported and Certified": "29022020",
+      "Account type": "SALARIED"
+    }
+  ],
+  "End Segment": [],
+  "Email Address": [
+    {
+      "E-mail ID": "brahma-reddy.suram@capgemini.com",
+      "Date Reported": "29022020"
+    },
+    {
+      "E-mail ID": "BRAHMAANAND94@GMAIL.COM",
+      "Date Reported": "29022020"
+    }
+  ],
+  "Summary": {
+    "Total Payments": 0,
+    "Late Payments": 0,
+    "Age Of Oldest Account Months": 17,
+    "Number Of Accounts ": 0,
+    "Number of Active Accounts": 0,
+    "Number Of Credit Cards": 0,
+    "Accounts Impacted": []
+  }
+}

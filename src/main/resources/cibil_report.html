@@ -1,0 +1,216 @@
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <head>
+        <title>Cibil Report</title>
+        <style>
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+ td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+ tr:nth-child(even){background-color: #f2f2f2;}
+
+ tr:hover {background-color: #ddd;}
+
+ th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: grey;
+  color: white;
+}
+
+.arc {
+  border: 6px solid green;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border-top-color: transparent;
+  transform: rotate(270deg)
+  }
+
+        </style>
+    </head>
+<body>
+<h1 style="color: orange">
+    <span>CIBIL</span>
+</h1>
+<h2>CIBIL Credit Score & Report</h2>
+<div class='arc'>
+    <h2>459</h2>
+</div>
+<h3>Personal Information</h3>
+<table id="PersonalInfo">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Gender</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>${name}</td>
+        <td>${dob}</td>
+        <td>${gender}</td>
+    </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+    <tr>
+        <th>Identification Type</th>
+        <th>Number</th>
+        <th>Issue Date</th>
+        <th>Expiration Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>${idtyoe}</td>
+        <td>${no}</td>
+        <td>${issDaate}</td>
+        <td>${expDate}</td>
+    </tr>
+    </tbody>
+</table>
+<h3>Contact Information</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Address</th>
+        <th>Status</th>
+        <th>Date Reported</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>${add}</td>
+        <td>${status}</td>
+        <td>${dateReprt}</td>
+    </tr>
+    </tbody>
+</table>
+<table>
+    <thead>
+    <tr>
+        <th>Telephone Number Type</th>
+        <th>Telephone Number</th>
+        <th>Extension</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>${telNoType}</td>
+        <td>${telNo}</td>
+        <td>${extnsn}</td>
+    </tr>
+    </tbody>
+</table>
+<table>
+    <thead>
+    <tr>
+        <th>Email Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>${email}</td>
+    </tr>
+    </tbody>
+</table>
+
+<h3>Employment Information</h3>
+<table>
+    <tr>
+        <th>Account Type</th>
+        <td>${accType}</td>
+    </tr>
+    <tr>
+        <th>Date Reported</th>
+        <td>${datRept}</td>
+    </tr>
+    <tr>
+        <th>Occupation</th>
+        <td>${occ}</td>
+    </tr>
+    <tr>
+        <th>Income</th>
+        <td>${income}</td>
+    </tr>
+    <th>Frequency</th>
+    <td>${frequency}</td>
+    </tr>
+    <tr>
+        <th>Income Indicator</th>
+        <td>${incInd}</td>
+    </tr>
+</table>
+<h3>Account Information</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Member Name</th>
+        <th>Account Type</th>
+        <th>Account Number</th>
+        <th>Ownership</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>${memName}</td>
+        <td>${accType}</td>
+        <td>${accNo}</td>
+        <td>${owner}</td>
+    </tr>
+    </tbody>
+</table>
+<h4>Account Details</h4>
+<table>
+    <tr>
+        <th>Credit Limit</th>
+        <td>${accType}</td>
+    </tr>
+    <tr>
+        <th>Sanctioned Amount</th>
+        <td>${datRept}</td>
+    </tr>
+    <tr>
+        <th>Current Balance</th>
+        <td>${occ}</td>
+    </tr>
+    <tr>
+        <th>Cash Limit</th>
+        <td>${income}</td>
+    </tr>
+    <th>Amount Overdue</th>
+    <td>${frequency}</td>
+    </tr>
+    <tr>
+        <th>Rate of Interest</th>
+        <td>${roi}</td>
+    </tr>
+    <tr>
+        <th>Repayment Tenure</th>
+        <td>${tenure}</td>
+    </tr>
+    <tr>
+        <th>EMI Amount</th>
+        <td>${emi}</td>
+    </tr>
+    <tr>
+        <th>Payment Frequency</th>
+        <td>${roi}</td>
+    </tr>
+</table>
+</body>
+</html>
