@@ -1,0 +1,305 @@
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Account Opening Form</title>
+    <style>
+    @page{
+        margin: 20px 20px auto;
+        border:black;
+        border-width:2px;
+        border-style:solid;
+    }
+
+    div.footer {
+      position: fixed;
+      bottom: 0;
+      font-size: 12px;
+    }
+
+    table {
+      table-layout: fixed;
+      width: 100%;
+      font-size:10px;
+    }
+
+    div.hl {
+      border: 0.5px solid black;
+      width: 100%;
+      position: absolute;
+      margin-top: 7px;
+    }
+
+    div.font{
+        font-family:Courier New;
+        font-size:12px;
+        font-weight:bold;
+        font-style:italic;
+        text-decoration: underline;
+    }
+
+    p {
+        margin: auto;
+    }
+
+    </style>
+</head>
+
+<body>
+<div class="header" style="position:fixed; top: 0px; left: 0px;font-size: 12px;">
+    <p th:text="'Application Number : ' + ${applicationNo}"></p>
+</div>
+<div class="image" style="position:fixed; top: 0px; right: 0px;">
+    <img alt="" src="https://wp-asset.groww.in/wp-content/uploads/2020/10/17121301/Equitas-Small-Finance-Bank-1.jpg"
+         style="width: 200px; height: 100px;"></img>
+</div>
+<div style="padding-top: 80px; padding-bottom: 20px;">
+    <h4 style="color: red;text-align:center">
+        <span>SELFE ACCOUNT OPENING FORM</span>
+    </h4>
+
+    <div class="font" style="text-align:center">Account Details</div>
+    <table>
+        <tr>
+            <td>Account Number :</td>
+            <td th:text=${account.name}></td>
+        </tr>
+        <tr>
+            <td>Product Name :</td>
+            <td th:text=${account.product}></td>
+        </tr>
+        <tr>
+            <td>Branch :</td>
+            <td th:text=${account.branch}></td>
+        </tr>
+        <tr>
+            <td>IFSC Code :</td>
+            <td th:text=${account.code}></td>
+        </tr>
+        <tr>
+            <td>Mode of Operation :</td>
+            <td th:text=${account.mode}></td>
+        </tr>
+        <tr>
+            <td>Primary Account holder Customer ID :</td>
+            <td th:text=${account.customerId}></td>
+        </tr>
+    </table>
+    <div class="hl"></div>
+    <br></br>
+    <div class="font" style="text-align:center">Personal Details of customer – Primary Applicant</div>
+    <table>
+        <tr>
+            <td>Customer Name as per Aadhaar Card :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+        <tr>
+            <td>Aadhaar Number :</td>
+            <td th:text="${customer.id_Number}"></td>
+        </tr>
+        <tr>
+            <td>Pan Number :</td>
+            <td th:text="${customer.date_Reported}"></td>
+        </tr>
+        <tr>
+            <td>Date of Birth :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+        <tr>
+            <td>Gender :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+        <tr>
+            <td>Father’s Name :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+        <tr>
+            <td>Mother’s Maiden Name :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+        <tr>
+            <td>Email ID :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+        <tr>
+            <td>Mailing/Communication Address :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+        <tr>
+            <td>Permanent Address :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+        <tr>
+            <td>Occupation :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+        <tr>
+            <td>Annual Income :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+        <tr>
+            <td>Marital Status :</td>
+            <td th:text="${customer.id_Type}"></td>
+        </tr>
+    </table>
+    <div class="hl"></div>
+    <br></br>
+    <div class="font" style="text-align:center">Nomination Details</div>
+    <table>
+        <tr>
+            <td>Nominee Required :</td>
+            <td th:text="${nominee_required}"></td>
+        </tr>
+        <tr>
+            <td>Nominee Name :</td>
+            <td th:text="${nominee_name}"></td>
+        </tr>
+        <tr>
+            <td>Date of Birth :</td>
+            <td th:text="${nominee_dateOfBirth}"></td>
+        </tr>
+        <tr>
+            <td>Relationship :</td>
+            <td th:text="${nominee_relationship}"></td>
+        </tr>
+        <tr>
+            <td>Nominee Address :</td>
+            <td th:text="${nominee_address}"></td>
+        </tr>
+    </table>
+    <div class="hl"></div>
+    <br/>
+    <div class="font">Fatca Declaration Details</div>
+    <p style="font-family:Courier New;font-size:9px;">I here by declare that I am a tax resident of India above the age
+        of
+        18 , and hereby comply with FATCA
+        Declaration.</p>
+    <div class="font">Terms and Conditions of this product</div>
+    <div class="font">I/We, am/are aware of the following :</div>
+    <p style="font-family:Courier New;font-size:9px;margin:0">
+        1. Opening this SB account online through your digital platform has no intervention or role of the Bank except
+        providing the facility of the digital platform.<b>The initial payment for the account shall be remitted only
+        from a
+        KYC complied account.</b><br/>
+        2. The basis of the account opening is my/our Aadhaar Card.<br/>
+        3. I/we agree and hereby authorise Equitas Small Finance Bank to fetch my/our personal details using OTP.
+        Aadhaar E-
+        KYC which will be used for KYC purposes. My/our personal details are being drawn from the database maintained by
+        UIDAI based on the Aadhaar number provided by me/us. Bank is not responsible for any incorrect information that
+        may appear in the data provided by me/us.<br/>
+        4. The opening of the account will be confirmed only after I/we enter the OTP number received to my/our mobile
+        number linked to and available in Aadhaar database.<br/>
+        5. As the details are drawn from UIDAI data base, they cannot be modified or altered by me/us.<br></br>
+        6. I/we are solely responsible for the data made available for opening the account.<br/>
+        7. The data may be lost or get distorted during transmission and I/we shall not make the Bank liable or
+        responsible
+        for the same.<br/>
+        8. Since the opening of the account is through digital platform, there could arise technical fault or error
+        during
+        the opening of the account, which is beyond the control of the Bank and the Bank is not responsible for any loss
+        in this regard.<br/>
+        9. Following the digital opening of the account, I/we should approach your branch for personal verification of
+        the
+        details, made available by me digitally in person, within 12 months from the date of opening of the account. If
+        the KYC documents as specified by the Bank is not furnished within 12 months the account would be closed
+        immediately with/without any intimation to me/us.<br/>
+        10. Till such time, I/we present the personal details for verification, there shall be restrictions on credits
+        and
+        debits in the account as per the guidelines issued by the RBI, which, as on date, restricts me/us from holding
+        aggregate credit balance of more than Rs.1 lakh in all the accounts held with Equitas Small Finance Bank and a
+        cumulative credit transaction carried out by me/us would not exceed Rs.2 lakhs in a financial year. The account
+        would be totally frozen until 12 months from date of account opening in case of breach of limits specified by
+        RBI. The account could be operated only when the KYC documents as specified by Bank is furnished.<br/>
+        11. I am also aware that if the verification has not been done by me even beyond the 12 month period, Bank
+        reserves
+        the right to close the account without any reference to me and I will have to visit the branch for withdrawing
+        the funds by providing valid documents as specified by the Bank.I shall not have any claim or dispute with the
+        Bank for any loss that may result to me in this regard as it is solely attributable to me.<br/>
+        12. I am aware that I would be eligible for a term loan only in the aggregate of Rs.60,000/-.<br/>
+        13. Till I present the personal details for verification, I am not entitled to debit card or POS machine
+        transactions
+        at any commercial outlets.<br/>
+        14. Till I present the personal details like KYC documents for verification, I am not allowed to carry out any
+        transactions at the branch, further, I am not entitled to cheque, cash, NEFT, RTGS and IMPS transactions through
+        branch However I/we are permitted to carry out all online/digital transactions through Net banking/Mobile
+        banking.<br/>
+        15. I declare that no other account has been opened nor will be opened using OTP based Aadhaar e-KYC within the
+        same
+        Bank or with any other bank.<br/>
+        16. I am aware that the link for opening Self’E Account uses cookies to ensures the best experience.<br/>
+        17. I agree that such an account will be subject to regular scrutiny and monitoring from the bank and bank shall
+        reserve the right to completely freeze/debit freeze/ close the account at its sole discretion, in case of
+        suspicious transactions or transactions not in consistent with RBI guidelines relating to the account.<br/>
+        18. I do agree to all the general Terms and Conditions which can be accessed at
+        <a href="https://www.equitasbank.com/pdf/Terms-conditions.pdf">https://www.equitasbank.com/pdf/Terms-conditions.pdf</a>
+        <br/>
+
+
+
+
+
+        1. Opening this SB account online through your digital platform has no intervention or role of the Bank except
+        providing the facility of the digital platform.<b>The initial payment for the account shall be remitted only
+        from a
+        KYC complied account.</b><br/>
+        2. The basis of the account opening is my/our Aadhaar Card.<br/>
+        3. I/we agree and hereby authorise Equitas Small Finance Bank to fetch my/our personal details using OTP.
+        Aadhaar E-
+        KYC which will be used for KYC purposes. My/our personal details are being drawn from the database maintained by
+        UIDAI based on the Aadhaar number provided by me/us. Bank is not responsible for any incorrect information that
+        may appear in the data provided by me/us.<br/>
+        4. The opening of the account will be confirmed only after I/we enter the OTP number received to my/our mobile
+        number linked to and available in Aadhaar database.<br/>
+        5. As the details are drawn from UIDAI data base, they cannot be modified or altered by me/us.<br></br>
+        6. I/we are solely responsible for the data made available for opening the account.<br/>
+        7. The data may be lost or get distorted during transmission and I/we shall not make the Bank liable or
+        responsible
+        for the same.<br/>
+        8. Since the opening of the account is through digital platform, there could arise technical fault or error
+        during
+        the opening of the account, which is beyond the control of the Bank and the Bank is not responsible for any loss
+        in this regard.<br/>
+        9. Following the digital opening of the account, I/we should approach your branch for personal verification of
+        the
+        details, made available by me digitally in person, within 12 months from the date of opening of the account. If
+        the KYC documents as specified by the Bank is not furnished within 12 months the account would be closed
+        immediately with/without any intimation to me/us.<br/>
+        10. Till such time, I/we present the personal details for verification, there shall be restrictions on credits
+        and
+        debits in the account as per the guidelines issued by the RBI, which, as on date, restricts me/us from holding
+        aggregate credit balance of more than Rs.1 lakh in all the accounts held with Equitas Small Finance Bank and a
+        cumulative credit transaction carried out by me/us would not exceed Rs.2 lakhs in a financial year. The account
+        would be totally frozen until 12 months from date of account opening in case of breach of limits specified by
+        RBI. The account could be operated only when the KYC documents as specified by Bank is furnished.<br/>
+        11. I am also aware that if the verification has not been done by me even beyond the 12 month period, Bank
+        reserves
+        the right to close the account without any reference to me and I will have to visit the branch for withdrawing
+        the funds by providing valid documents as specified by the Bank.I shall not have any claim or dispute with the
+        Bank for any loss that may result to me in this regard as it is solely attributable to me.<br/>
+        12. I am aware that I would be eligible for a term loan only in the aggregate of Rs.60,000/-.<br/>
+        13. Till I present the personal details for verification, I am not entitled to debit card or POS machine
+        transactions
+        at any commercial outlets.<br/>
+        14. Till I present the personal details like KYC documents for verification, I am not allowed to carry out any
+        transactions at the branch, further, I am not entitled to cheque, cash, NEFT, RTGS and IMPS transactions through
+        branch However I/we are permitted to carry out all online/digital transactions through Net banking/Mobile
+        banking.<br/>
+        15. I declare that no other account has been opened nor will be opened using OTP based Aadhaar e-KYC within the
+        same
+        Bank or with any other bank.<br/>
+        16. I am aware that the link for opening Self’E Account uses cookies to ensures the best experience.<br/>
+        17. I agree that such an account will be subject to regular scrutiny and monitoring from the bank and bank shall
+        reserve the right to completely freeze/debit freeze/ close the account at its sole discretion, in case of
+        suspicious transactions or transactions not in consistent with RBI guidelines relating to the account.<br/>
+        18. I do agree to all the general Terms and Conditions which can be accessed at
+    </p>
+</div>
+<div class="footer" style="position:fixed; bottom: 4px; left: 2px;font-size: 12px;">
+    <p th:text="${date}"></p>
+</div>
+</body>
+</html>

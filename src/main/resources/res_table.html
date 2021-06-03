@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.blah{
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+table {
+    table-layout: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+p[Attributes Style] {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+table thead th {
+    padding: 10px;
+    text-align: center;
+    border: 4px solid black;
+    border-collapse: collapse;
+    border-color: rgb(210,210,210);
+    vertical-align: center;
+    min-width: 150px !important;
+}
+
+#myTable tr td:nth-child(1) { width: 300px;
+min-width: 300px; }
+
+table tbody tr td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-color: rgb(224, 224, 224);
+    vertical-align: center;
+}
+
+
+
+th[scope=row] {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+    </style>
+</head>
+<body>
+
+<h2>Responsive Table</h2>
+
+<div id="blah">
+    <table id="myTable" border="1" style="overflow-x: scroll; overflow-y: scroll;">
+        <col width="auto">
+        <col width="auto">
+        <col width="auto">
+        <col width="auto">
+        <col width="auto">
+        <col width="auto">
+        <col width="auto">
+        <col width="auto">
+        <col width="auto">
+        <tr>
+            <th rowspan="2"><p dir="ltr"><strong>COLLEGE</strong></p></th>
+            <th rowspan="2"><p dir="ltr"><strong>REGION</strong></p></th>
+            <th rowspan="2"><p dir="ltr"><strong>COURSE</strong></p></th>
+            <th rowspan="2"><p dir="ltr"><strong>QUOTA</strong></p></th>
+            <th colspan="3"><p dir="ltr"><strong>GEN</strong></p></th>
+            <th colspan="3"><p dir="ltr"><strong>OBC</strong></p></th>
+            <th colspan="3"><p dir="ltr"><strong>SC</strong></p></th>
+            <th colspan="3"><p dir="ltr"><strong>ST</strong></p></th>
+            <th colspan="3"><p dir="ltr"><strong>EWS</strong></p></th>
+        </tr>
+        <tr>
+            <th onclick="sortTable(4)"><p dir="ltr"><strong>OR</strong></p></th>
+            <th><p dir="ltr"><strong>CR</strong></p></th>
+            <th><p dir="ltr"><strong>SEAT</strong></p></th>
+            <th onclick="sortTable(7)"><p dir="ltr"><strong>OR</strong></p></th>
+            <th><p dir="ltr"><strong>CR</strong></p></th>
+            <th><p dir="ltr"><strong>SEAT</strong></p></th>
+            <th onclick="sortTable(10)"><p dir="ltr"><strong>OR</strong></p></th>
+            <th><p dir="ltr"><strong>CR</strong></p></th>
+            <th><p dir="ltr"><strong>SEAT</strong></p></th>
+            <th onclick="sortTable(13)"><p dir="ltr"><strong>OR</strong></p></th>
+            <th><p dir="ltr"><strong>CR</strong></p></th>
+            <th><p dir="ltr"><strong>SEAT</strong></p></th>
+            <th onclick="sortTable(16)"><p dir="ltr"><strong>OR</strong></p></th>
+            <th><p dir="ltr"><strong>CR</strong></p></th>
+            <th><p dir="ltr"><strong>SEAT</strong></p></th>
+        </tr>
+        <tbody>
+        <tr>
+            <td><p dir="ltr">King George Medical University, Lucknow</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">1912</p></td>
+            <td><p dir="ltr">637</p></td>
+            <td><p dir="ltr">637</p></td>
+            <td><p dir="ltr">2839</p></td>
+            <td><p dir="ltr">629</p></td>
+            <td><p dir="ltr">637</p></td>
+            <td><p dir="ltr">34051</p></td>
+            <td><p dir="ltr">528</p></td>
+            <td><p dir="ltr">637</p></td>
+            <td><p dir="ltr">170862</p></td>
+            <td><p dir="ltr">362</p></td>
+            <td><p dir="ltr">637</p></td>
+            <td><p dir="ltr">587</p></td>
+            <td><br></td>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td><p dir="ltr">Sarojini Naidu Medical College, Agra</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">8510</p></td>
+            <td><p dir="ltr">597</p></td>
+            <td><p dir="ltr">637</p></td>
+            <td><p dir="ltr">9822</p></td>
+            <td><p dir="ltr">591</p></td>
+            <td><p dir="ltr">637</p></td>
+            <td><p dir="ltr">77200</p></td>
+            <td><p dir="ltr">458</p></td>
+            <td><p dir="ltr">637</p></td>
+            <td><p dir="ltr">288393</p></td>
+            <td><p dir="ltr">282</p></td>
+            <td><p dir="ltr">637</p></td>
+            <td><p dir="ltr">587</p></td>
+            <td><p dir="ltr">587</p></td>
+            <td><p dir="ltr">587</p></td>
+        </tr>
+        <tr>
+            <td><p dir="ltr">Moti Lal Nehru Medical College, Pragyraj</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">6629</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><p dir="ltr">7636</p></td>
+            <td><p dir="ltr">601</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><p dir="ltr">73500</p></td>
+            <td><p dir="ltr">463</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><p dir="ltr">214903</p></td>
+            <td><p dir="ltr">329</p></td>
+            <td><p dir="ltr">8480</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><p dir="ltr">597</p></td>
+            <td><p dir="ltr">587</p></td>
+        </tr>
+        <tr>
+            <td><p dir="ltr">Lala Lajpat Rai Memorial Medical College, Meerut</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">8065</p></td>
+            <td><p dir="ltr">599</p></td>
+            <td><p dir="ltr">8992</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><p dir="ltr">595</p></td>
+            <td><p dir="ltr">73064</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><p dir="ltr">464</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><p dir="ltr">172573</p></td>
+            <td><p dir="ltr">361</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><br></td>
+            <td><p dir="ltr">587</p></td>
+        </tr>
+        <tr>
+            <td><p dir="ltr">Maharani Laxmibai Medical College, Jhansi</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">NAHHHIII</p></td>
+            <td><p dir="ltr">10310</p></td>
+            <td><p dir="ltr">590</p></td>
+            <td><p dir="ltr">11654</p></td>
+            <td><p dir="ltr">585</p></td>
+            <td><p dir="ltr">84973</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><p dir="ltr">448</p></td>
+            <td><p dir="ltr">605</p></td>
+            <td><p dir="ltr">337801</p></td>
+            <td><p dir="ltr">255</p></td>
+            <td><p dir="ltr">255</p></td>
+            <td><p dir="ltr">10953</p></td>
+            <td><p dir="ltr">255</p></td>
+            <td><p dir="ltr">587</p></td>
+            <td><p dir="ltr">587</p></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

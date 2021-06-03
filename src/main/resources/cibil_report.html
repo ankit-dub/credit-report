@@ -2,10 +2,29 @@
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-    <head>
-        <title>Cibil Report</title>
-        <style>
+    <title>Cibil Report</title>
+    <style>
+    .hl {
+  border: 1px solid brown;
+  width: 100%;
+  position: absolute;
+  margin-top: 7px;
+}
+@page{
+    @top-right {
+        content: element(header);
+        vertical-align: bottom;
+        padding-bottom: 10px;
+    }
+}
+
+div.header {
+    display: block;
+    position: running(header);
+    border-bottom: 1px solid black;
+}
 table {
+  -fs-table-paginate: paginate;
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -13,7 +32,7 @@ table {
 
  td, th {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 4px;
   text-align: center;
 }
 
@@ -22,32 +41,39 @@ table {
  tr:hover {background-color: #ddd;}
 
  th {
-  padding-top: 12px;
-  padding-bottom: 12px;
   background-color: grey;
   color: white;
 }
 
-.arc {
-  border: 6px solid green;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  border-top-color: transparent;
-  transform: rotate(270deg)
-  }
+td {
+    font-size: 14px
+}
 
-        </style>
-    </head>
+.arc {
+  border: 8px solid green;
+  border-radius: 100%;
+  height:100px;
+  width: 100px;
+  border-top-color: #f2f2f2;
+ }
+
+
+    </style>
+</head>
 <body>
+<div class="header">
+    the header that will repeat
+</div>
 <h1 style="color: orange">
     <span>CIBIL</span>
 </h1>
-<h2>CIBIL Credit Score & Report</h2>
+<h2 style="color: orange">CIBIL Credit Score and Report</h2>
+
+<div class="hl"></div>
 <div class='arc'>
-    <h2>459</h2>
+    <h1 style="text-align:center" th:text=${score}></h1>
 </div>
-<h3>Personal Information</h3>
+<h3 style="color: blue">Personal Information</h3>
 <table id="PersonalInfo">
     <thead>
     <tr>
@@ -58,48 +84,48 @@ table {
     </thead>
     <tbody>
     <tr>
-        <td>${name}</td>
-        <td>${dob}</td>
-        <td>${gender}</td>
+        <td th:text=${customer.name}></td>
+        <td th:text=${customer.dateofbirth}></td>
+        <td>Male</td>
     </tr>
     </tbody>
 </table>
-
+<br></br>
 <table>
     <thead>
     <tr>
         <th>Identification Type</th>
         <th>Number</th>
         <th>Issue Date</th>
-        <th>Expiration Date</th>
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>${idtyoe}</td>
-        <td>${no}</td>
-        <td>${issDaate}</td>
-        <td>${expDate}</td>
+    <tr th:each="identifications : ${identifications}">
+        <td th:text="${identifications.id_Type}"></td>
+        <td th:text="${identifications.id_Number}"></td>
+        <td th:text="${identifications.date_Reported}"></td>
     </tr>
     </tbody>
 </table>
-<h3>Contact Information</h3>
+<div class="hl"></div>
+<h3 style="color: blue">Contact Information</h3>
 <table>
     <thead>
     <tr>
         <th>Address</th>
-        <th>Status</th>
+        <th>PinCode</th>
         <th>Date Reported</th>
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>${add}</td>
-        <td>${status}</td>
-        <td>${dateReprt}</td>
+    <tr th:each="addressList : ${addressList}">
+        <td th:text="${addressList.address}"></td>
+        <td th:text="${addressList.pinCode}"></td>
+        <td th:text="${addressList.date_Reported}"></td>
     </tr>
     </tbody>
 </table>
+<br></br>
 <table>
     <thead>
     <tr>
@@ -116,6 +142,7 @@ table {
     </tr>
     </tbody>
 </table>
+<br></br>
 <table>
     <thead>
     <tr>
@@ -123,39 +150,16 @@ table {
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>${email}</td>
+    <tr th:each="emails : ${emails}">
+        <td th:text="${emails.email}"></td>
     </tr>
     </tbody>
 </table>
+<div class="hl"></div>
 
 <h3>Employment Information</h3>
-<table>
-    <tr>
-        <th>Account Type</th>
-        <td>${accType}</td>
-    </tr>
-    <tr>
-        <th>Date Reported</th>
-        <td>${datRept}</td>
-    </tr>
-    <tr>
-        <th>Occupation</th>
-        <td>${occ}</td>
-    </tr>
-    <tr>
-        <th>Income</th>
-        <td>${income}</td>
-    </tr>
-    <th>Frequency</th>
-    <td>${frequency}</td>
-    </tr>
-    <tr>
-        <th>Income Indicator</th>
-        <td>${incInd}</td>
-    </tr>
-</table>
-<h3>Account Information</h3>
+
+<h3 style="color: blue">Account Information</h3>
 <table>
     <thead>
     <tr>
@@ -174,43 +178,27 @@ table {
     </tr>
     </tbody>
 </table>
-<h4>Account Details</h4>
+
+<div class="hl"></div>
+
+<h4 style="color: blue">Enquiry Information</h4>
 <table>
+    <thead>
     <tr>
-        <th>Credit Limit</th>
-        <td>${accType}</td>
+        <th>Member Name</th>
+        <th>Date Of Enquiry</th>
+        <th>Enquiry Purpose</th>
+        <th>Enquiry Amount</th>
     </tr>
-    <tr>
-        <th>Sanctioned Amount</th>
-        <td>${datRept}</td>
+    </thead>
+    <tbody>
+    <tr th:each="enquiries : ${enquiries}">
+        <td th:text="${enquiries.enquiringMember}"></td>
+        <td th:text="${enquiries.enquiryAmount}"></td>
+        <td th:text="${enquiries.enquiryPurpose}"></td>
+        <td th:text="${enquiries.dateEnquiry}"></td>
     </tr>
-    <tr>
-        <th>Current Balance</th>
-        <td>${occ}</td>
-    </tr>
-    <tr>
-        <th>Cash Limit</th>
-        <td>${income}</td>
-    </tr>
-    <th>Amount Overdue</th>
-    <td>${frequency}</td>
-    </tr>
-    <tr>
-        <th>Rate of Interest</th>
-        <td>${roi}</td>
-    </tr>
-    <tr>
-        <th>Repayment Tenure</th>
-        <td>${tenure}</td>
-    </tr>
-    <tr>
-        <th>EMI Amount</th>
-        <td>${emi}</td>
-    </tr>
-    <tr>
-        <th>Payment Frequency</th>
-        <td>${roi}</td>
-    </tr>
+    </tbody>
 </table>
 </body>
 </html>
